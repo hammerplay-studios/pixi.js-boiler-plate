@@ -1,6 +1,5 @@
 import { bomberFrames } from '../assets/loader';
 import * as PIXI from 'pixi.js';
-import "../plugin/pixi-tiledmap/index";
 
 // Prepare frames
 const playerFrames = bomberFrames;
@@ -29,11 +28,6 @@ export class GameApp {
         loader.add('../assets/map/Base.tmx');
         // Load assets
         loader.load(this.onAssetsLoaded.bind(this));
-
-        
-        /*.load(()=>{
-            
-        });*/
     }
 
     
